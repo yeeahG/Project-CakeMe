@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,200&family=Pacifico&display=swap');
+
+:root {
+    --blue: #7b9acc;
+    --black: #333;
+    --white: #FCF6F5;
+    --yellow: #E7D044;
+    --purple: #A04EF6;
+    --light-bg: #FCF6F5;
+    --light-color: #666;
+    --border:.1rem solid var(--light-color);
+    --box-shadow: 0 .5rem 1rem  rgba(0,0,0,.1);
+
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Pacifico', cursive; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+html {
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+body {
+    background: var(--light-bg);
+}
+
+section {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: var(--blue);
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+}
