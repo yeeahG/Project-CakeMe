@@ -3,7 +3,7 @@
 :root {
     --blue: #7b9acc;
     --black: #333;
-    --white: #FCF6F5;
+    --white: #fff;
     --yellow: #E7D044;
     --purple: #A04EF6;
     --light-bg: #FCF6F5;
@@ -54,6 +54,24 @@ section {
     padding: 2rem;
     margin: 0 auto;
     max-width: 1200px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    color: var(--black);
+    background-color: var(--blue);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.btn:hover {
+    background-color: var(--yellow);
+    color: var(--white);
 }
 
 .header {
@@ -107,8 +125,114 @@ section {
     display: none;
 }
 
+/*user*/
+.user-account {
+    position: fixed;
+    top: 0; right: -110%;
+    width: 100%;
+    z-index: 1100;
+    background-color: var(--white);
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.user-account.active{
+    right: 0;
+}
+
+.user-account #close-account {
+    text-align: right;
+    margin-bottom: 2.5rem;
+}
+
+.user-account #close-account span {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.user-account #close-account span:hover {
+    color: var(--yellow);
+}
 
 
+.user-account .user {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+}
+
+.user-account .user p {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.user-account .user p span {
+    color: var(--black);
+}
+
+
+.user-account .display-orders {
+    padding:3rem 2rem;
+    text-align: center;
+    background-color: var(--light-bg);
+    border-radius: .5rem;
+    margin: 2rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.user-account .display-orders p {
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    color: var(--light-color);
+    background-color: var(--white);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+}
+
+.user-account .display-orders p span {
+    color: var(--purple);
+}
+
+
+.user-account .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+
+.user-account .flex form {
+    flex:1 1 40rem;
+    border-radius: .5rem;
+    padding:2rem;
+    background-color: var(--light-bg);
+}
+
+.user-account .flex form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}
+
+.user-account .flex form .box {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.4rem;
+    font-size: 1.2rem;
+    color: var(--black);
+}
 
 
 
@@ -141,7 +265,7 @@ section {
 
     /* navbar가 아이콘 안에서 활성화*/
     .header .flex .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 
     .header .flex .navbar a {
