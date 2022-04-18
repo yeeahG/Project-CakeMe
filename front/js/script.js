@@ -29,9 +29,24 @@ document.querySelector('#close-orders').onclick = () => {
 }
 
 
+/*---------------------------------cart---------------------------------*/
+let cart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () => {
+    cart.classList.toggle('active');
+}
+
+document.querySelector('#close-cart').onclick = () => {
+    cart.classList.remove('active');
+}
+
+
+
+
 
 
 window.onscroll = () => {
     navbar.classList.remove('active');
-
+    myOrders.classList.remove('active');
+    cart.classList.remove('active');
 }
