@@ -33,7 +33,7 @@
         </section>
     </header>
 
-    <!--USER-->
+    <!---------------------------------USER--------------------------------->
     <div class="user-account">
         <section>
             <div id="close-account">
@@ -46,15 +46,15 @@
     
             <div class="display-orders">
                 <p>
-                    cake 1
+                    cake 01
                     <span>( ￦2/ - x 2 )</span>
                 </p>
                 <p>
-                    cake 2
+                    cake 03
                     <span>( ￦2/ - x 1 )</span>
                 </p>
                 <p>
-                    cake 4
+                    cake 04
                     <span>( ￦2/ - x 2 )</span>
                 </p>
             </div>
@@ -81,7 +81,103 @@
         </section>
     </div>
 
-    <!-- custom js file link  -->
+
+    <!---------------------------------ORDERS--------------------------------->
+    <div class="my-orders">
+        <section>
+            <div id="close-orders">
+                <span>close</span>
+            </div>
+
+            <h3 class="title">My orders</h3>
+
+            <div class="box">
+                <p>placed on : <span>2022/04/18</span> </p>
+                <p>name : <span>yeji kim</span> </p>
+                <p>number : <span>01012341234</span></p>
+                <p>address : <span>Seoul some where</span></p>
+                <p>payment method : <span>cash on delivery</span></p>
+                <p>your orders : <span>cake 01 ￦2/- x 2, cake 03 ￦2/- x 1, cake 04 ￦2/- x 2</span></p>
+                <p>total price : <span>￦10/-</span></p>
+                <p>payment status : <span style="color: var(--yellow);">pending</span> </p>
+            </div>
+
+            <div class="box">
+                <p>placed on : <span>2022/04/18</span> </p>
+                <p>name : <span>yeji kim</span> </p>
+                <p>number : <span>01012341234</span></p>
+                <p>address : <span>Seoul some where</span></p>
+                <p>payment method : <span>cash on delivery</span></p>
+                <p>your orders : <span>cake 01 ￦2/- x 2, cake 03 ￦2/- x 1, cake 04 ￦2/- x 2</span></p>
+                <p>total price : <span>￦10/-</span></p>
+                <p>payment status : <span style="color: var(--yellow);">pending</span> </p>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <!---------------------------------CART--------------------------------->
+    <div class="shopping-cart">
+        <section>
+           <div id="close-cart"><span>close</span></div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/cake1.png" alt="">
+              <div class="content">
+                 <p>cake1 <span>( ￦2/- x 2 )</span></p>
+                 <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                 </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/pizza-3.png" alt="">
+              <div class="content">
+                 <p>cake-3 <span>( ￦2/- x 1 )</span></p>
+                 <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                 </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/cake4.png" alt="">
+              <div class="content">
+                <p>cake4 <span>( ￦2/- x 2 )</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/donut2.png" alt="">
+              <div class="content">
+                <p>donut2 <span>( ￦1/- x 1 )</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+              </div>
+           </div>
+     
+           <a href="#order" class="btn">order now</a>
+     
+        </section>
+    </div>
+
+
+    <!---------------------------------custom js--------------------------------->
     <script src="js/script.js"></script>
     
 </body>
