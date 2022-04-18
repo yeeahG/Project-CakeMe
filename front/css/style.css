@@ -48,6 +48,7 @@ html {
 
 body {
     background: var(--light-bg);
+    overflow-x: hidden;
 }
 
 section {
@@ -397,11 +398,96 @@ section {
 
 
 
+/*---------------------------------Navi bar---------------------------------*/
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(5rem);
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(-5rem);
+    }
+}
+
+.home-bg {
+    background: url(../images/home-bg3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-bg .home .slide-container {
+    margin-top: 12rem;
+ }
 
 
+.home-bg .home .slide-container .slide {
+    display: none;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.home-bg .home .slide-container .slide.active {
+    display: flex;
+}
 
 
+.home-bg .home .slide-container .slide .image {
+    /*flex: 1 1 40rem;*/
+    animation: fadeRight .4s linear;
+}
 
+.home-bg .home .slide-container .slide .image img {
+    width: 400px;
+}
+
+
+.home-bg .home .slide-container .slide .content {
+    flex: 1 1 40rem;
+    text-align: center;
+    animation: fadeLeft .4s linear;
+}
+
+
+.home-bg .home .slide-container .slide .content h3 {
+    background-color: var(--purple);
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-size: 4rem;
+    text-shadow: var(--box-shadow);
+    line-height: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left,
+.home-bg .home .slide-container .slide .content .fa-angle-right {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: var(--black);
+    background-color: var(--white);
+    margin: 0 .5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.home-bg .home .slide-container .slide .content .fa-angle-left:hover,
+.home-bg .home .slide-container .slide .content .fa-angle-right:hover{
+   background-color: var(--yellow);
+   color:var(--white);
+}
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+ }
 
 
 
@@ -435,6 +521,10 @@ section {
     .header .flex .navbar a {
         display: block;
         margin: 2rem;
+    }
+
+    .home-bg .home .slide-container .slide .content h3 {
+        font-size: 4rem;
     }
 }
 
