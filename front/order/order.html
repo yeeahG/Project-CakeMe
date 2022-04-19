@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Me!</title>
     <script src="https://kit.fontawesome.com/9c739a32cc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header class="header">
         <section class="flex">
-            <a href="#home" class="logo">Cake</a>
+            <a href="/" class="logo">Cake</a>
             <nav class="navbar">
-                <a href="#home">home</a>
+                <a href="/">home</a>
                 <a href="./about/about.html">about</a>
                 <!--<a href="#menu">menu</a>-->
                 <a href="./menu/menu.html">menu</a>
-                <a href="./order/order.html">order</a>
+                <a href="/order/order.html">order</a>
                 <a href="#faq">faq</a>
             </nav>
 
@@ -31,6 +31,151 @@
 
         </section>
     </header>
+
+
+        <!---------------------------------USER--------------------------------->
+    <div class="user-account">
+        <section>
+            <div id="close-account">
+                <span>close</span>
+            </div>
+    
+            <div class="user">
+                <p><span>You are not logged in now</span></p>
+            </div>
+    
+            <div class="display-orders">
+                <p>
+                    cake 01
+                    <span>( ￦2/ - x 2 )</span>
+                </p>
+                <p>
+                    cake 03
+                    <span>( ￦2/ - x 1 )</span>
+                </p>
+                <p>
+                    cake 04
+                    <span>( ￦2/ - x 2 )</span>
+                </p>
+            </div>
+    
+            <div class="flex">
+    
+                <form action="" method="post">
+                    <h3>Login now</h3>
+                    <input type="text" name="phone" required class="box" placeholder="enter your phone number" maxlength="15">
+                    <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+                    <input type="submit" value="login now" name="login" class="btn">
+                </form>
+    
+                <form action="" method="post">
+                    <h3>Register now</h3>
+                    <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+                    <input type="text" name="phone" required class="box" placeholder="enter your phone number" maxlength="15">
+                    <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+                    <input type="password" name="pass" required class="box" placeholder="confirm your password" maxlength="20">
+                    <input type="submit" value="register now" name="register" class="btn">
+                </form>
+    
+            </div>
+        </section>
+    </div>
+
+
+    <!---------------------------------ORDERS--------------------------------->
+    <div class="my-orders">
+        <section>
+            <div id="close-orders">
+                <span>close</span>
+            </div>
+
+            <h3 class="title">My orders</h3>
+
+            <div class="box">
+                <p>placed on : <span>2022/04/18</span> </p>
+                <p>name : <span>yeji kim</span> </p>
+                <p>number : <span>01012341234</span></p>
+                <p>address : <span>Seoul some where</span></p>
+                <p>payment method : <span>cash on delivery</span></p>
+                <p>your orders : <span>cake 01 ￦2/- x 2, cake 03 ￦2/- x 1, cake 04 ￦2/- x 2</span></p>
+                <p>total price : <span>￦10/-</span></p>
+                <p>payment status : <span style="color: var(--yellow);">pending</span> </p>
+            </div>
+
+            <div class="box">
+                <p>placed on : <span>2022/04/18</span> </p>
+                <p>name : <span>yeji kim</span> </p>
+                <p>number : <span>01012341234</span></p>
+                <p>address : <span>Seoul some where</span></p>
+                <p>payment method : <span>cash on delivery</span></p>
+                <p>your orders : <span>cake 01 ￦2/- x 2, cake 03 ￦2/- x 1, cake 04 ￦2/- x 2</span></p>
+                <p>total price : <span>￦10/-</span></p>
+                <p>payment status : <span style="color: var(--yellow);">pending</span> </p>
+            </div>
+
+
+        </section>
+    </div>
+
+
+    <!---------------------------------CART--------------------------------->
+    <div class="shopping-cart">
+        <section>
+           <div id="close-cart"><span>close</span></div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/cake1.png" alt="">
+              <div class="content">
+                 <p>cake1 <span>( ￦2/- x 2 )</span></p>
+                 <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                 </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/cake3.png" alt="">
+              <div class="content">
+                 <p>cake-3 <span>( ￦2/- x 1 )</span></p>
+                 <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                 </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/cake4.png" alt="">
+              <div class="content">
+                <p>cake4 <span>( ￦2/- x 2 )</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+              </div>
+           </div>
+     
+           <div class="box">
+              <a href="#" class="fas fa-times"></a>
+              <img src="images/donut2.png" alt="">
+              <div class="content">
+                <p>donut2 <span>( ￦1/- x 1 )</span></p>
+                <form action="" method="post">
+                    <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                    <button type="submit" class="fas fa-edit" name="update_qty"></button>
+                </form>
+              </div>
+           </div>
+     
+           <a href="#order" class="btn">order now</a>
+     
+        </section>
+    </div>
+
 
     <!---------------------------------USER--------------------------------->
     <div class="user-account">
@@ -175,14 +320,15 @@
         </section>
     </div>
 
-    <!---------------------------------home--------------------------------->
-    <div class="home-bg">
+
+   <!---------------------------------home--------------------------------->
+   <div class="home-bg">
         <section class="home" id="home">
             <div class="slide-container">
 
                 <div class="slide active">
                     <div class="image">
-                        <img src="images/cake5.png" alt="">
+                        <img src="../images/home1.png" alt="">
                     </div>
                     <div class="content">
                         <h3>Holiday Cake</h3>
@@ -193,10 +339,10 @@
         
                 <div class="slide">
                     <div class="image">
-                        <img src="images/cake13.png" alt="">
+                        <img src="../images/home2.png" alt="">
                     </div>
                     <div class="content">
-                        <h3>Special Lettering Cake</h3>
+                        <h3>Special Cake</h3>
                         <div class="fas fa-angle-left" onclick="prev()"></div>
                         <div class="fas fa-angle-right" onclick="next()"></div>
                     </div>
@@ -204,7 +350,7 @@
         
                 <div class="slide">
                     <div class="image">
-                        <img src="images/cake6.png" alt="">
+                        <img src="../images/home3.png" alt="">
                     </div>
                     <div class="content">
                         <h3>Strawberry Cream Cake</h3>
@@ -215,7 +361,7 @@
 
                 <div class="slide">
                     <div class="image">
-                        <img src="images/cake8.png" alt="">
+                        <img src="../images/donut2.png" alt="">
                     </div>
                     <div class="content">
                         <h3>Strawberry Cream Cake</h3>
@@ -227,170 +373,71 @@
             </div>
         </section>
     </div>
+
+
+    <!---------------------------------order--------------------------------->
+    <section class="order" id="order">
+        <h1 class="heading">order now</h1>
+
+        <form action="" method="post">
+            <div class="display-orders">
+                <p>cake-1 <span>( ￦2/- x 2 )</span></p>
+                <p>cake-2 <span>( ￦2/- x 1 )</span></p>
+                <p>cake-3 <span>( ￦2/- x 4 )</span></p>
+                <p>cake-4 <span>( ￦2/- x 1 )</span></p>
+            </div>
+
+            <div class="flx">
+
+                <div class="inputBox">
+                    <span>your name :</span>
+                    <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+                </div>
+
+                <div class="inputBox">
+                    <span>your number :</span>
+                    <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+                </div>
+
+                <div class="inputBox">
+                    <span>payment method</span>
+                    <select name="method" class="box">
+                       <option value="cash on delivery">cash on delivery</option>
+                       <option value="credit card">credit card</option>
+                       <option value="paytm">paytm</option>
+                       <option value="paypal">paypal</option>
+                    </select>
+                </div>
+
+                <div class="inputBox">
+                    <span>address line 01 :</span>
+                    <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+                </div>
+                
+                <div class="inputBox">
+                    <span>address line 02 :</span>
+                    <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+                </div>
+                <div class="inputBox">
+                    <span>pin code :</span>
+                    <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+                </div>
+
+            </div>
+
+            <input type="submit" value="order now" class="btn" name="order">
+
+        </form>
+
+    </section>
+
     
-    <!---------------------------------about shop--------------------------------->
-    <!--
-    <section class="about" id="about">
-        <h1 class="heading">about us</h1>
-        <div class="box-container">
 
-            <div class="box">
-                <img src="" alt="">
-                <h3>made with love</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-                <a href="#menu" class="btn">our menu</a>
-            </div>
-
-            <div class="box">
-                <img src="" alt="">
-                <h3>made cake within 7days</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-                <a href="#menu" class="btn">our menu</a>
-            </div>
-
-            <div class="box">
-                <img src="" alt="">
-                <h3>made your time special</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae amet beatae magni numquam facere sit. Tempora vel laboriosam repudiandae!</p>
-                <a href="#menu" class="btn">our menu</a>
-            </div>
-
-        </div>
-    </section>
-    -->
-
-    <!---------------------------------Menu--------------------------------->
-    <section id="menu" class="menu">
-        <h1 class="heading">our menu</h1>
-        <div class="box-container">
-
-            <!--
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake1.png" alt="">
-                <div class="name">{cake}</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-            -->
-     
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake1.png" alt="">
-                <div class="name">cake 1</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake2.png" alt="">
-                <div class="name">cake 2</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake3.png" alt="">
-                <div class="name">cake 3</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake4.png" alt="">
-                <div class="name">cake 4</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake5.png" alt="">
-                <div class="name">cake 5</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake6.png" alt="">
-                <div class="name">cake 6</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-        </div>
-
-
-        <h1 class="heading">cup cake & dognut</h1>
-        <div class="box-container">
-     
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake11.png" alt="">
-                <div class="name">cake 11</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-            
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cupcake2.png" alt="">
-                <div class="name">cupcake 2</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/cake9.png" alt="">
-                <div class="name">cake 9</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-            <div class="box">
-                <div class="price">￦<span>2</span>/-</div>
-                <img src="images/donut2.png" alt="">
-                <div class="name">donut 2</div>
-                <form action="" method="post">
-                    <input type="number" min="1" max="100" value="1" class="qty" name="qty">
-                    <input type="submit" value="add to cart" name="add_to_cart" class="btn">
-                </form>
-            </div>
-
-
-        </div>
-
-
-    </section>
 
 
     <!---------------------------------custom js--------------------------------->
-    <script src="js/script.js"></script>
-    
+    <script src="../js/script.js"></script>
+
 </body>
+
 </html>

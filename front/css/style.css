@@ -532,10 +532,20 @@ section {
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
-    gap:1.5rem;
+    gap: 1.5rem;
     align-items: flex-start;
     justify-content: center;
-    width: auto;
+    /*width: auto;*/
+}
+
+.menu .box-container .box {
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    /*height: 100%;*/
 }
 
 
@@ -543,6 +553,61 @@ section {
     width: 100%;
     margin-bottom: 1rem;
 }
+
+.menu .box-container .box .price {
+    background-color: var(--black);
+    border-radius: .5rem;
+    padding:.5rem 1rem;
+    font-size: 1.5rem;
+    color: var(--white);
+    position: absolute;
+    top: 1rem; left: 1rem;
+}
+
+.menu .box-container .box .price span {
+    font-optical-sizing: 2rem;
+}
+
+.menu .box-container .box .name {
+    font-size: 2rem;
+    color: var(--black);
+    margin: .5rem 0;
+}
+
+.menu .box-container .box form {
+    display: flex;
+    gap: 1rem;
+}
+
+.menu .box-container .box form .qty {
+    width: 5rem;
+    border:var(--border);
+    padding:1rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color:var(--black);
+}
+
+/*
+.menu .box-container {
+    grid-template-columns: 1fr;
+} */
+
+
+/*---------------------------------media queries---------------------------------*/
+.order form {
+    background-color: var(--white);
+    padding:2rem;
+    border-radius: .5rem;
+ }
+
+
+
+
+
+
+
 
 
 /*---------------------------------media queries---------------------------------*/
