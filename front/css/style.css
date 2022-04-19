@@ -439,6 +439,7 @@ section {
 
 .home-bg .home .slide-container .slide.active {
     display: flex;
+    justify-content: center;
 }
 
 
@@ -489,6 +490,8 @@ section {
    color:var(--white);
 }
 
+
+/*---------------------------------About---------------------------------*/
 .about .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
@@ -497,7 +500,6 @@ section {
     justify-content: center;
  }
 
-/*---------------------------------About---------------------------------*/
 .about .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, 35rem);
@@ -526,10 +528,21 @@ section {
 }
 
 
+/*---------------------------------menu---------------------------------*/
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    width: auto;
+}
 
 
-
-
+.menu .box-container .box img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
 
 /*---------------------------------media queries---------------------------------*/
